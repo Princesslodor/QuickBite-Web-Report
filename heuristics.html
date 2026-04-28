@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heuristics | QuickBite Evaluation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html" style="color: var(--primary);">QUICKBITE.</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="methodology.html">Methodology</a>
+            <a class="nav-link" href="respondents.html">Respondents</a>
+            <a class="nav-link active" href="heuristics.html">Heuristics</a>
+            <a class="nav-link" href="testing.html">Testing</a>
+            <a class="nav-link" href="analysis.html">Analysis</a>
+            <a class="nav-link" href="recommendations.html">Recommendations</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Heuristic Evaluation</h1>
+        <p class="lead">Applying Jakob Nielsen's 10 Usability Principles</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <h2 class="section-title">Usability Inspection Results</h2>
+    <p class="mb-4">We evaluated the QuickBite prototype against the standard 10 heuristics to identify UI/UX strengths and areas for improvement before conducting the 40-respondent user test.</p>
+
+    <div class="table-responsive shadow-sm rounded-4">
+        <table class="table table-hover align-middle bg-white mb-0">
+            <thead class="table-dark">
+                <tr>
+                    <th style="width: 30%;">Heuristic</th>
+                    <th>Application in QuickBite</th>
+                    <th class="text-center">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1. Visibility of System Status</strong></td>
+                    <td>Real-time tracking of "Order Received," "Preparing," and "Ready for Pick-up."</td>
+                    <td class="text-center"><span class="badge bg-success">Passed</span></td>
+                </tr>
+                <tr>
+                    <td><strong>2. Match between System & Real World</strong></td>
+                    <td>Uses local PSU canteen menu terms and familiar icons (trash bin for delete).</td>
+                    <td class="text-center"><span class="badge bg-success">Passed</span></td>
+                </tr>
+                <tr>
+                    <td><strong>3. User Control & Freedom</strong></td>
+                    <td>"Undo" and "Edit" options in the cart allow students to fix mistakes quickly.</td>
+                    <td class="text-center"><span class="badge bg-success">Passed</span></td>
+                </tr>
+                <tr>
+                    <td><strong>4. Consistency & Standards</strong></td>
+                    <td>Follows standard mobile navigation patterns (Bottom Nav Bar).</td>
+                    <td class="text-center"><span class="badge bg-success">Passed</span></td>
+                </tr>
+                <tr>
+                    <td><strong>5. Error Prevention</strong></td>
+                    <td>Confirmation pop-ups before placing an order to prevent accidental purchases.</td>
+                    <td class="text-center"><span class="badge bg-warning text-dark">Minor Polish</span></td>
+                </tr>
+                <tr>
+                    <td><strong>6. Recognition Rather than Recall</strong></td>
+                    <td>Visual menu items with images so students don't have to memorize dish names.</td>
+                    <td class="text-center"><span class="badge bg-success">Passed</span></td>
+                </tr>
+                <tr>
+                    <td><strong>7. Flexibility & Efficiency of Use</strong></td>
+                    <td>Designated "Quick Order" for top-selling canteen items for busy students.</td>
+                    <td class="text-center"><span class="badge bg-success">Passed</span></td>
+                </tr>
+                <tr>
+                    <td><strong>8. Aesthetic & Minimalist Design</strong></td>
+                    <td>Clean white space with "QuickBite Orange" accents to avoid visual clutter.</td>
+                    <td class="text-center"><span class="badge bg-success">Passed</span></td>
+                </tr>
+                <tr>
+                    <td><strong>9. Help Users with Errors</strong></td>
+                    <td>Clear error messages if a field is left blank during checkout.</td>
+                    <td class="text-center"><span class="badge bg-success">Passed</span></td>
+                </tr>
+                <tr>
+                    <td><strong>10. Help & Documentation</strong></td>
+                    <td>Simple "FAQ" and "How to Order" guide integrated into the profile tab.</td>
+                    <td class="text-center"><span class="badge bg-warning text-dark">Future Add</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer class="bg-dark text-white py-4 text-center mt-5">
+    <p class="mb-0">&copy; 2026 PSU Goa | BSIT 3D Group QuickBite </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
