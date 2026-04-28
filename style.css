@@ -1,6 +1,5 @@
-/* --- GLOBAL STYLES & VARIABLES --- */
 :root {
-    --primary: #FF6B00; /* QuickBite Orange */
+    --primary: #FF6B00; 
     --dark: #212529;
     --light: #f4f7f6;
     --secondary: #FF8C33;
@@ -14,8 +13,6 @@ body {
     position: relative;
 }
 
-/* --- THE MOVING BACKGROUND EFFECT --- */
-/* This creates subtle moving circles in the background of ALL pages */
 body::before {
     content: "";
     position: fixed;
@@ -27,7 +24,7 @@ body::before {
         radial-gradient(circle at 10% 20%, rgba(255, 107, 0, 0.05) 0%, transparent 20%),
         radial-gradient(circle at 80% 80%, rgba(255, 140, 51, 0.05) 0%, transparent 20%),
         radial-gradient(circle at 50% 50%, rgba(255, 184, 140, 0.03) 0%, transparent 30%);
-    z-index: -1; /* Keeps it behind your text */
+    z-index: -1; 
     animation: moveBG 20s linear infinite;
 }
 
@@ -37,11 +34,10 @@ body::before {
     100% { transform: scale(1) translate(0, 0); }
 }
 
-/* --- ANIMATED HERO SECTION --- */
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    100% { background-position: 0% 50%; } 
 }
 
 .hero {
@@ -62,7 +58,6 @@ body::before {
     color: var(--dark);
 }
 
-/* --- THE FLOATING PHONE ANIMATION --- */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
@@ -81,7 +76,6 @@ body::before {
     animation: float 5s ease-in-out infinite; 
 }
 
-/* --- TEAM MEMBERS SECTION --- */
 .member-img {
     width: 140px; 
     height: 140px;
@@ -102,7 +96,7 @@ body::before {
     transition: all 0.3s ease;
     border-radius: 15px;
     border: none;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent for the background effect */
+    background: rgba(255, 255, 255, 0.8); 
     backdrop-filter: blur(5px);
 }
 
@@ -133,15 +127,23 @@ body::before {
     border-bottom: 2px solid var(--primary);
 }
 
-/* --- FOOTER --- */
 footer {
     border-top: 5px solid var(--primary);
     padding: 30px 0;
 }
 
-/* --- RESPONSIVE FIXES --- */
 @media (max-width: 768px) {
     .col-md-6 img.rounded-4 {
         max-width: 240px;
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller text for smaller screens */
+  }
+  
+  .hero-section {
+    padding: 20px; /* Less space on the sides for mobile */
+  }
+}
     }
 }
