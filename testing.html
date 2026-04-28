@@ -6,26 +6,29 @@
     <title>Testing | QuickBite Evaluation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="index.html" style="color: var(--primary);">QUICKBITE.</a>
-        <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="methodology.html">Methodology</a>
-            <a class="nav-link" href="respondents.html">Respondents</a>
-            <a class="nav-link" href="heuristics.html">Heuristics</a>
-            <a class="nav-link active" href="testing.html">Testing</a>
-            <a class="nav-link" href="analysis.html">Analysis</a>
-            <a class="nav-link" href="recommendations.html">Recommendations</a>
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+    <div class="container"> <a class="navbar-brand fw-bold" href="index.html" style="color: var(--primary);">QUICKBITE.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto text-center">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="methodology.html">Methodology</a>
+                <a class="nav-link" href="respondents.html">Respondents</a>
+                <a class="nav-link" href="heuristics.html">Heuristics</a>
+                <a class="nav-link active" href="testing.html">Testing</a>
+                <a class="nav-link" href="analysis.html">Analysis</a>
+                <a class="nav-link" href="recommendations.html">Recommendations</a>
+            </div>
         </div>
     </div>
 </nav>
 
-<header class="hero text-center">
+<header class="hero text-center py-5">
     <div class="container">
         <h1 class="display-4 fw-bold">Usability Testing</h1>
         <p class="lead">Execution, Scenarios, and Observation Protocols</p>
@@ -33,8 +36,60 @@
 </header>
 
 <main class="container my-5">
-    <div class="row g-5">
-        <div class="col-lg-7">
+    <div class="row g-4 lg-g-5">
+        <div class="col-12 col-lg-7">
+            <h2 class="section-title">The Testing Scenario</h2>
+            <p>Each of the 40 respondents was asked to complete a set of core tasks while being observed by our team. This helped us identify "pain points" in the user journey.</p>
+            
+            <div class="list-group shadow-sm">
+                <div class="list-group-item p-3">
+                    <h6 class="fw-bold mb-1 text-primary">Task 1: Account Creation & Login</h6>
+                    <p class="small mb-0 text-muted">Test how intuitively a student can set up their profile using their PSU credentials.</p>
+                </div>
+                <div class="list-group-item p-3">
+                    <h6 class="fw-bold mb-1 text-primary">Task 2: Menu Navigation & Selection</h6>
+                    <p class="small mb-0 text-muted">Find a specific local dish (e.g., Bicol Express) and customize the order details.</p>
+                </div>
+                <div class="list-group-item p-3">
+                    <h6 class="fw-bold mb-1 text-primary">Task 3: Cart Management</h6>
+                    <p class="small mb-0 text-muted">Add multiple items, remove one, and verify the total price before checkout.</p>
+                </div>
+                <div class="list-group-item p-3">
+                    <h6 class="fw-bold mb-1 text-primary">Task 4: Checkout & Order Tracking</h6>
+                    <p class="small mb-0 text-muted">Complete a simulated payment and track the order status from "Preparing" to "Ready."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+            <div class="card p-4 border-0 shadow-sm bg-light mb-4">
+                <h5 class="fw-bold text-primary">Testing Environment</h5>
+                <p class="small">Tests were conducted at the <strong>PSU-Goa Main Library</strong> and <strong>Canteen Area</strong> to capture environmental factors like noise and lighting.</p>
+                <hr>
+                <h5 class="fw-bold text-primary">Tools Used</h5>
+                <ul class="small ps-3">
+                    <li>High-fidelity Figma Prototype</li>
+                    <li>Android & iOS Mobile Devices</li>
+                    <li>Printed SUS Questionnaire</li>
+                    <li>Observation Checklists</li>
+                </ul>
+            </div>
+            
+            <div class="text-center">
+                <img src="testing.png" class="img-fluid rounded shadow-sm" alt="On-site testing session">
+                <p class="small text-muted mt-2">Team observation during testing session.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white py-4 text-center mt-5">
+    <p class="mb-0">&copy; 2026 PSU Goa | BSIT 3D Group QuickBite </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>        <div class="col-lg-7">
             <h2 class="section-title">The Testing Scenario</h2>
             <p>Each of the 40 respondents was asked to complete a set of core tasks while being observed by our team. This helped us identify "pain points" in the user journey.</p>
             
